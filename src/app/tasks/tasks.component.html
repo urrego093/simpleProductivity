@@ -1,0 +1,8 @@
+<div>
+  <app-search (onChange)="filter($event)"></app-search>
+</div>
+<br><br>
+
+<app-task-list [tasks]="taskList_filtered" ></app-task-list>
+
+<input type="button" value="Save" (click)="clickSubmit()" />

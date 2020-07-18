@@ -1,0 +1,11 @@
+<div *ngFor="let task of tasks"  >
+  <input type="text" [(ngModel)]="task.name" [ngClass]="task.done? 'taskDone' : 'null'"/>
+  <br>
+  <textarea name="" [(ngModel)]="task.description" [ngClass]="task.done? 'taskDone' : 'null'"  cols="30" rows="6"></textarea>
+  <br>
+  <input type="checkbox"  [(ngModel)]="task.done" name="" id=""  />
+  <br>
+  <br>
+</div>
+
+
