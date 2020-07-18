@@ -9,7 +9,6 @@ import {ITask} from "../../shared/interfaces";
 export class TaskListComponent implements OnInit {
 
   @Input() tasks: ITask[];
-  task_list_filtered: ITask[];
 
   constructor() { }
 

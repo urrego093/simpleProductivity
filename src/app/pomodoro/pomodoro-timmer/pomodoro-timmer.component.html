@@ -1,0 +1,15 @@
+<p>pomodoro-timmer works!</p>
+
+InitTime: {{initTime}}
+<br>
+currentTime: {{currentTime }}
+<br>
+class: {{timerClass}}
+
+<br>
+
+{{(initTime - currentTime) | minutesFormat}}
+
+<br>
+<input type="button" value="Start" (click)="start()" [disabled]="active">
+<input type="button" value="Stop" (click)="stop()" [disabled]="!active">
